@@ -28,6 +28,14 @@ $text-color: rgb(68, 68, 68,);
 }
 
 body {
+  display: grid;
+  grid-template-columns: 12.5% auto 12.5%;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "header header header"
+    "what what what"
+    "projects projects projects "
+    "footer footer footer";
   font-family: $font-main;
   font-weight: 400;
   font-size: 16px;
@@ -37,6 +45,7 @@ body {
 
 /**** Header ****/
 .header {
+  grid-area: header;
   height: 100vh;
   background-image: linear-gradient(
     to right bottom, 
@@ -89,7 +98,6 @@ body {
   right: 0;
   bottom: 0;
   line-height: 0;
-  width: 45%;
 }
 
 @keyframes moveInLeft {
@@ -129,6 +137,7 @@ body {
 /**** Section what-am-i ****/
 
 .what-am-i {
+  grid-area: what;
   padding-left: 12.5%;
 }
 .what {
