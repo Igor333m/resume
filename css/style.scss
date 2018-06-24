@@ -43,6 +43,20 @@ body {
   color: $text-color;
 }
 
+::-webkit-scrollbar {
+  width: 1em;
+  height: 3em;
+}
+::-webkit-scrollbar-button {
+  background: #ccc;
+}
+::-webkit-scrollbar-track-piece {
+  background: #fff;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(22, 50, 50);
+}
+
 /**** Header ****/
 .header {
   grid-area: header;
