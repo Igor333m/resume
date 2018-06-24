@@ -15,9 +15,9 @@ Yellow: #FFFF00;
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
 
 $font-main: "Lato", sans-serif;
-$primary-color1: rgba(0, 136, 255, 0.8);
-$primary-color2: rgba(0, 202, 255, 0.8);
-$text-color: #777;
+$primary-color1: rgb(225, 225, 225);
+$primary-color2: rgb(233, 233, 233);
+$text-color: rgb(68, 68, 68,);
 
 
 /* Reset css*/
@@ -33,7 +33,6 @@ body {
   font-size: 16px;
   line-height: 1.7;
   color: $text-color;
-  padding: 30px;
 }
 
 .header {
@@ -41,8 +40,7 @@ body {
   background-image: linear-gradient(
     to right bottom, 
     $primary-color1, 
-    $primary-color2),
-    url('../img/hero.jpg');
+    $primary-color2);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -56,26 +54,21 @@ body {
 }
 
 .logo {
-  height: 35px;
+  height: 50px;
 }
 
 .text-box {
   position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.heading-primary {
-  color: #fff;
-  text-transform: uppercase;
+  top: 20%;
+  left: 15%;
+  width: 40%;
 }
 
 .heading-primary-main {
-  display: block;
+  text-transform: uppercase;
   font-weight: 400;
-  font-size: 3rem;
-  letter-spacing: 2rem;
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
   animation-name: moveInLeft;
   animation-duration: 1s;
 }
@@ -84,7 +77,6 @@ body {
   display: block;
   font-weight: 700;
   font-size: 1rem;
-  letter-spacing: 0.95rem;
   animation-name: moveInRight;
   animation-duration: 1s;
   animation-timing-function: ease-out;
