@@ -36,7 +36,7 @@ body {
 }
 
 .header {
-  height: 95vh;
+  height: 100vh;
   background-image: linear-gradient(
     to right bottom, 
     $primary-color1, 
@@ -44,7 +44,7 @@ body {
   background-size: cover;
   background-position: top;
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95vh);
 }
 
 .logo-box {
@@ -66,7 +66,7 @@ body {
 
 .heading-primary-main {
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 2rem;
   letter-spacing: 0.3rem;
   animation-name: moveInLeft;
@@ -77,9 +77,16 @@ body {
   display: block;
   font-weight: 700;
   font-size: 1rem;
+  letter-spacing: 0.1rem;
   animation-name: moveInRight;
   animation-duration: 1s;
   animation-timing-function: ease-out;
+}
+
+.main-image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 @keyframes moveInLeft {
