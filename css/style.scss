@@ -16,8 +16,8 @@ Yellow: #FFFF00;
 
 $font-main: "Lato", sans-serif;
 $primary-color1: rgb(225, 225, 225);
-$primary-color2: rgb(233, 233, 233);
-$text-color: rgb(68, 68, 68,);
+$primary-color2: rgb(22, 50, 50);
+$text-color: rgb(68, 68, 68);
 
 
 /* Reset css*/
@@ -59,7 +59,7 @@ body {
 .logo-box {
   position: absolute;
   top: 40px;
-  left: 40px;
+  left: 12.5%;
 }
 
 .logo {
@@ -74,7 +74,6 @@ body {
 }
 
 .heading-primary-main {
-  text-transform: uppercase;
   font-weight: 700;
   font-size: 2rem;
   letter-spacing: 0.3rem;
@@ -144,9 +143,38 @@ body {
 
 .what-am-i {
   grid-area: what;
+  display: flex;
+  flex-direction: row;
   padding-left: 12.5%;
 }
 .what {
-  display: inline-block;
   width: 25vw;
+  margin-right: 10px;
+}
+
+.icon {
+  width: 60px;
+  padding-top: 50px;
+}
+
+hr { 
+  display: block;
+  width: 50px;
+  margin-bottom: 0.5em;
+  border-style: solid;
+  border-width: 1.5px;
+} 
+
+.what p {
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+
+
+/**** Projects ****/
+
+.projects {
+  position: relative;
+  height: 1000px;
 }
