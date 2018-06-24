@@ -35,6 +35,7 @@ body {
   color: $text-color;
 }
 
+/**** Header ****/
 .header {
   height: 100vh;
   background-image: linear-gradient(
@@ -44,7 +45,6 @@ body {
   background-size: cover;
   background-position: top;
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95vh);
 }
 
 .logo-box {
@@ -60,7 +60,7 @@ body {
 .text-box {
   position: absolute;
   top: 20%;
-  left: 15%;
+  left: 12.5%;
   width: 40%;
 }
 
@@ -71,6 +71,7 @@ body {
   letter-spacing: 0.3rem;
   animation-name: moveInLeft;
   animation-duration: 1s;
+  padding-bottom: 15px;
 }
 
 .heading-primary-sub {
@@ -87,6 +88,8 @@ body {
   position: absolute;
   right: 0;
   bottom: 0;
+  line-height: 0;
+  width: 45%;
 }
 
 @keyframes moveInLeft {
@@ -119,4 +122,18 @@ body {
     opacity: 1;
     transform: translate(0);
   }
+}
+
+/**** Header END ****/
+
+/**** Section what-am-i ****/
+
+.what-am-i {
+  margin-left: 12.5%;
+}
+.what {
+  border: 1px solid red;
+  display: inline-block;
+
+  width: 25%;
 }
