@@ -15,8 +15,8 @@ Yellow: #FFFF00;
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
 
 $font-main: "Lato", sans-serif;
-$primary-color1: rgb(225, 225, 225);
-$primary-color2: rgb(22, 50, 50);
+$primary-color1: rgb(233, 233, 233);
+$primary-color2: rgb(233, 233, 233);
 $text-color: rgb(68, 68, 68);
 
 
@@ -34,7 +34,8 @@ body {
   grid-template-areas: 
     "header header header"
     "what what what"
-    "projects projects projects "
+    "projects projects projects"
+    "contact contact contact"
     "footer footer footer";
   font-family: $font-main;
   font-weight: 400;
@@ -48,8 +49,8 @@ h1, h2 {
 }
 
 ::-webkit-scrollbar {
-  width: 1em;
-  height: 1em;
+  width: 0.25em;
+  height: 0.25em;
 }
 ::-webkit-scrollbar-button {
   background: #ccc;
@@ -58,7 +59,7 @@ h1, h2 {
   background: #fff;
 }
 ::-webkit-scrollbar-thumb {
-  background: rgb(22, 50, 50);
+  background: #6ecbd2;
 }
 
 /**** Header ****/
@@ -234,4 +235,33 @@ hr {
   height: auto;
 }
 
+/**** Contact ****/
 
+.contact {
+  grid-area: contact;
+  position: relative;
+  background-color: #000;
+}
+
+.contact-title {
+  width: 113px;
+  margin: auto;
+  padding: 50px 0;
+  color: #fff;
+}
+
+.contact-title hr {
+  margin: auto;
+  color: #fff;
+}
+
+.contact-form {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: auto;
+  width: 75%;
+  border: solid 1px red;
+  overflow: auto;
+  padding-bottom: 50px;
+}
