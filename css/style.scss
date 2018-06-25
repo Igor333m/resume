@@ -304,7 +304,7 @@ input, textarea {
   color: white;
   background-color: #1a1a1a;
   border: solid white 0.7px;
-  
+  padding-left: 10px;
 }
 
 textarea[placeholder] {
@@ -317,7 +317,6 @@ textarea[placeholder] {
   font-weight: 400;
   font-size: 16px;
   font-family: $font-main;
-  padding-left: 10px;
 
 }
 
@@ -326,7 +325,6 @@ textarea[placeholder] {
   font-weight: 400;
   font-size: 16px;
   font-family: $font-main;
-  padding-left: 10px;
 }
 
 ::-ms-input-placeholder { /* Microsoft Edge */
@@ -334,7 +332,6 @@ textarea[placeholder] {
   font-weight: 400;
   font-size: 16px;
   font-family: $font-main;
-  padding-left: 10px;
 }
 
 input {
