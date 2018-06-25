@@ -9,6 +9,7 @@ Dark orange: #D43600;
 Orange: #FF8800;
 Light orange: #FFCA00;
 Yellow: #FFFF00;
+Button: #6ecbd2;
 
 */
 
@@ -18,6 +19,7 @@ $font-main: "Lato", sans-serif;
 $primary-color1: rgb(233, 233, 233);
 $primary-color2: rgb(233, 233, 233);
 $text-color: rgb(68, 68, 68);
+$button-color: #6ecbd2;
 
 
 /* Reset css*/
@@ -46,6 +48,23 @@ body {
 
 h1, h2 {
    letter-spacing: 0.2rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+button {
+  width: 13%;
+  height: 3.5rem;
+  background-color: $button-color;
+  margin-bottom: 50px;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: $font-main;
+  letter-spacing: 0.2rem;
 }
 
 ::-webkit-scrollbar {
@@ -178,7 +197,7 @@ h1, h2 {
 
 hr { 
   display: block;
-  width: 50px;
+  width: 75px;
   margin-bottom: 0.5em;
   border-style: solid;
   border-width: 1.5px;
@@ -201,7 +220,7 @@ hr {
 }
 
 .projects-title {
-  width: 113px;
+  width: 10%;
   margin: auto;
   padding: 50px 0;
 }
@@ -245,7 +264,7 @@ hr {
 }
 
 .contact-title {
-  width: 113px;
+  width: 9.5%;
   margin: auto;
   padding: 50px 0;
   color: #fff;
@@ -261,7 +280,7 @@ hr {
   justify-content: center;
   margin: auto;
   width: 75%;
-  border: solid 1px red;
+  // border: solid 1px red;
   overflow: auto;
   padding-bottom: 50px;
 }
@@ -269,7 +288,7 @@ hr {
 .form-group {
   width: 48.75%;
   padding-bottom: 2.5%;
-  border: solid green 1px;
+  // border: solid green 1px;
 }
 
 .form-group:last-child {
@@ -284,7 +303,7 @@ input, textarea {
   width: 100%;
   color: white;
   background-color: #1a1a1a;
-  border: solid white 1px;
+  border: solid white 0.7px;
   
 }
 
@@ -295,7 +314,7 @@ textarea[placeholder] {
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: white;
   opacity: 1; /* Firefox */
-  font-weight: 700;
+  font-weight: 400;
   font-size: 16px;
   font-family: $font-main;
   padding-left: 10px;
@@ -304,7 +323,7 @@ textarea[placeholder] {
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
   color: white;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 16px;
   font-family: $font-main;
   padding-left: 10px;
@@ -312,7 +331,7 @@ textarea[placeholder] {
 
 ::-ms-input-placeholder { /* Microsoft Edge */
   color: white;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 16px;
   font-family: $font-main;
   padding-left: 10px;
