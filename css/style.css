@@ -197,8 +197,9 @@ hr {
 }
 
 .project {
-  width: 35%;
+  width: 48.75%;
   padding-bottom: 2.5%;
+  border: solid 1px blue;
 }
 
 .project:nth-child(even) {
@@ -215,7 +216,7 @@ hr {
 .contact {
   grid-area: contact;
   position: relative;
-  background-color: #000;
+  background-color: #1a1a1a;
 }
 
 .contact-title {
@@ -239,6 +240,74 @@ hr {
   border: solid 1px red;
   overflow: auto;
   padding-bottom: 50px;
+}
+
+.form-group {
+  width: 48.75%;
+  padding-bottom: 2.5%;
+  border: solid green 1px;
+}
+
+.form-group:last-child {
+  margin-left: 2.5%;
+}
+
+#contact {
+  text-align: center;
+}
+
+input, textarea {
+  width: 100%;
+  color: white;
+  background-color: #1a1a1a;
+  border: solid white 1px;
+}
+
+textarea[placeholder] {
+  padding-top: 10px;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1;
+  /* Firefox */
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  padding-left: 10px;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  padding-left: 10px;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  padding-left: 10px;
+}
+
+input {
+  height: 4em;
+  margin-bottom: 1.5rem;
+}
+
+input:last-child {
+  margin-bottom: 0;
+}
+
+textarea {
+  height: 100%;
+  line-height: 1.7;
 }
 
 /*# sourceMappingURL=style.css.map */
