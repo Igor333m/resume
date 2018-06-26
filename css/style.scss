@@ -20,6 +20,7 @@ $primary-color1: rgb(233, 233, 233);
 $primary-color2: rgb(233, 233, 233);
 $text-color: rgb(68, 68, 68);
 $button-color: #6ecbd2;
+$background-color: #e9e9e9;
 
 
 /* Reset css*/
@@ -72,7 +73,7 @@ button {
   height: 0.25em;
 }
 ::-webkit-scrollbar-button {
-  background: #ccc;
+  background: $background-color;
 }
 ::-webkit-scrollbar-track-piece {
   background: #fff;
@@ -91,7 +92,7 @@ button {
     $primary-color2);
   background-size: cover;
   background-position: top;
-  position: relative;
+  // position: relative;
 }
 
 .logo-box {
@@ -220,7 +221,7 @@ hr {
   grid-area: projects;
 
   position: relative;
-  background-color: #e9e9e9;
+  background-color: $background-color;
 }
 
 .projects-title {
@@ -263,7 +264,6 @@ hr {
 
 .contact {
   grid-area: contact;
-  position: relative;
   background-color: #1a1a1a;
 }
 
@@ -351,3 +351,32 @@ textarea {
   line-height: 1.7;
 }
 
+/**** Footer ****/
+
+.footer {
+  height: 6rem;
+  grid-area: footer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 12.5%;
+  background-color: $background-color;
+}
+
+.footer-text {
+  width: 25vw;
+  padding-top: 2.2rem;
+}
+
+.footer-text:nth-child(2) {
+  text-align: center;
+}
+
+.footer-text:last-child {
+  text-align: right;
+}
+
+a {
+  text-decoration: none;
+  color: $text-color;
+}
