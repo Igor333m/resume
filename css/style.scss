@@ -55,7 +55,7 @@ h2 {
 }
 
 button {
-  width: 13%;
+  width: 250px;
   height: 3.5rem;
   background-color: $button-color;
   margin-bottom: 50px;
@@ -113,7 +113,7 @@ button {
 
 .heading-primary-main {
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 2.5rem;
   letter-spacing: 0.3rem;
   animation-name: moveInLeft;
   animation-duration: 1s;
@@ -123,11 +123,15 @@ button {
 .heading-primary-sub {
   display: block;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.5rem;
   letter-spacing: 0.1rem;
   animation-name: moveInRight;
   animation-duration: 1s;
   animation-timing-function: ease-out;
+}
+
+#download-resume {
+  margin-top: 40px;
 }
 
 .main-image {
@@ -282,7 +286,6 @@ hr {
   width: 75%;
   // border: solid 1px red;
   overflow: auto;
-  padding-bottom: 50px;
 }
 
 .form-group {
