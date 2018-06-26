@@ -187,12 +187,19 @@ button {
 .what-am-i {
   grid-area: what;
   display: flex;
-  flex-direction: row;
-  padding-left: 12.5%;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  // margin: auto;
+  padding: 0 12.5%;
+  overflow: auto;
 }
 .what {
-  width: 25vw;
-  margin-right: 2.5%;
+  width: 21.65vw;
+  margin-right: 5%;
+}
+
+.what:last-child {
+  margin-right: 0;
 }
 
 .icon {
@@ -211,6 +218,7 @@ hr {
 .what p {
   padding-top: 20px;
   padding-bottom: 50px;
+  text-align:justify;
 }
 
 
@@ -237,22 +245,19 @@ hr {
 .all-projects {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
-  margin: auto;
-  width: 75%;
-  border: solid 1px red;
+  justify-content: space-between;
+  // margin: auto;
+  padding: 0 12.5%;
   overflow: auto;
 }
 
 .project {
-  width: 48.75%;
+  width: 21.64vw;
   padding-bottom: 2.5%;
-  border: solid 1px blue;
 }
 
-.project:nth-child(even) {
-  border: solid green 1px;
-  margin-left: 2.5%;
+.project:nth-child(3) {
+  margin-right: 0;
 }
 
 .project img {
