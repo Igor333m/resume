@@ -224,7 +224,9 @@ hr {
 
 .project {
   width: 21.64vw;
-  padding-bottom: 2.5%;
+  margin-bottom: 5vh;
+  height: 75vh;
+  border: solid 0.5px red;
 }
 
 .project:nth-child(3) {
@@ -234,6 +236,48 @@ hr {
 .project img {
   max-width: 100%;
   height: auto;
+}
+
+.project-name {
+  text-align: right;
+}
+
+.project-name span {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-weight: 300;
+  font-size: 2rem;
+  color: #fff;
+  margin-top: -20px;
+  border-radius: 5px 0 0 5px;
+}
+
+.golf span {
+  background-image: linear-gradient(to right bottom, rgba(255, 202, 0, 0.8), rgba(255, 255, 0, 0.8));
+}
+
+.myreads span {
+  background-image: linear-gradient(to right bottom, rgba(40, 180, 133, 0.8), rgba(126, 213, 111, 0.8));
+}
+
+.asteroids span {
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 255, 0.8), rgba(200, 40, 200, 0.8));
+}
+
+.memorygame span {
+  background-image: linear-gradient(to right bottom, rgba(2, 204, 186, 0.8), rgba(170, 126, 205, 0.8));
+}
+
+.ladybug span {
+  background-image: linear-gradient(to right bottom, rgba(50, 40, 255, 0.8), rgba(0, 0, 100, 0.8));
+}
+
+.confusion span {
+  background-image: linear-gradient(to right bottom, rgba(102, 203, 255, 0.8), rgba(0, 129, 193, 0.8));
+}
+
+.project-name span:first-child {
+  margin-top: 20px;
 }
 
 /**** Contact ****/
