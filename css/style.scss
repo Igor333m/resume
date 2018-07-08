@@ -122,7 +122,7 @@ button {
 
 .heading-primary-sub {
   display: block;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
   animation-name: moveInRight;
@@ -253,8 +253,12 @@ hr {
 .project {
   width: 21.64vw;
   margin-bottom: 5vh;
-  height: 75vh;
-  border: solid 0.5px red;
+  background-color: #fff;
+  // border: solid 0.5px red;
+
+  -webkit-box-shadow: -1px 4px 27px -2px rgba(163,157,163,1);
+  -moz-box-shadow: -1px 4px 27px -2px rgba(163,157,163,1);
+  box-shadow: -1px 4px 27px -2px rgba(163,157,163,1);
 }
 
 .project:nth-child(3) {
@@ -263,10 +267,28 @@ hr {
 
 .project img {
   max-width: 100%;
-  height: auto;
+  height: 30vh;
+}
+
+.card2 {
+  height: 30vh;
+  background-size: cover;
+  background-position: center 0;
+  // border: solid 0.5px blue;
+  background-blend-mode: screen;
+  background-image: 
+    // linear-gradient(
+    //   to right bottom, 
+    //   rgba(40 , 180, 133, 0.3), 
+    //   rgba(126 , 213, 111, 0.3)),
+    url('../images/myreads.jpg');
+    background-repeat: no-repeat;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
 }
 
 .project-name {
+  position: relative;
   text-align: right;
 }
 
@@ -283,7 +305,7 @@ hr {
 .golf span {
   background-image: linear-gradient(
     to right bottom, 
-    rgba(255 , 202, 0, 0.8), 
+    rgba(255 , 190, 0, 0.8), 
     rgba(255 , 255, 0, 0.8));
 }
 
@@ -301,7 +323,7 @@ hr {
     rgba(200 , 40, 200, 0.8));
 }
 
-.memorygame span {
+.memorygame span { 
   background-image: linear-gradient(
     to right bottom, 
     rgba(2 , 204, 186, 0.8), 
@@ -323,7 +345,24 @@ hr {
 }
 
 .project-name span:first-child {
-  margin-top: 20px;
+  
+}
+
+.technologies {
+  list-style-type: none;
+  text-align: center;
+  padding: 2rem 0;
+  line-height: 3rem;
+  width: 75%;
+  margin: auto;
+}
+
+li {
+  border-bottom: 1px grey solid;
+}
+
+li:last-child {
+  border-bottom: none;
 }
 
 /**** Contact ****/

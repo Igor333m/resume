@@ -107,7 +107,7 @@ button {
 
 .heading-primary-sub {
   display: block;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
   animation-name: moveInRight;
@@ -225,8 +225,10 @@ hr {
 .project {
   width: 21.64vw;
   margin-bottom: 5vh;
-  height: 75vh;
-  border: solid 0.5px red;
+  background-color: #fff;
+  -webkit-box-shadow: -1px 4px 27px -2px #a39da3;
+  -moz-box-shadow: -1px 4px 27px -2px #a39da3;
+  box-shadow: -1px 4px 27px -2px #a39da3;
 }
 
 .project:nth-child(3) {
@@ -235,10 +237,22 @@ hr {
 
 .project img {
   max-width: 100%;
-  height: auto;
+  height: 30vh;
+}
+
+.card2 {
+  height: 30vh;
+  background-size: cover;
+  background-position: center 0;
+  background-blend-mode: screen;
+  background-image: url("../images/myreads.jpg");
+  background-repeat: no-repeat;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
 }
 
 .project-name {
+  position: relative;
   text-align: right;
 }
 
@@ -253,7 +267,7 @@ hr {
 }
 
 .golf span {
-  background-image: linear-gradient(to right bottom, rgba(255, 202, 0, 0.8), rgba(255, 255, 0, 0.8));
+  background-image: linear-gradient(to right bottom, rgba(255, 190, 0, 0.8), rgba(255, 255, 0, 0.8));
 }
 
 .myreads span {
@@ -276,8 +290,21 @@ hr {
   background-image: linear-gradient(to right bottom, rgba(102, 203, 255, 0.8), rgba(0, 129, 193, 0.8));
 }
 
-.project-name span:first-child {
-  margin-top: 20px;
+.technologies {
+  list-style-type: none;
+  text-align: center;
+  padding: 2rem 0;
+  line-height: 3rem;
+  width: 75%;
+  margin: auto;
+}
+
+li {
+  border-bottom: 1px grey solid;
+}
+
+li:last-child {
+  border-bottom: none;
 }
 
 /**** Contact ****/
