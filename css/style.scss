@@ -101,7 +101,7 @@ button {
 }
 
 .logo {
-  height: 50px;
+  height: 100px;
 }
 
 .text-box {
@@ -490,6 +490,11 @@ a {
 /**** Media Queries  ****/
 
 @media screen and (max-width: 1400px) {
+
+  .logo {
+    height: 75px;
+  }
+
   .main-image {
     max-width: 40%;
   }
@@ -544,6 +549,17 @@ a {
 
   .heading-primary-sub {
     font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 850px) and (orientation: portrait){
+
+  .heading-primary-main {
+    font-size: 2.4rem;
+  }
+
+  .heading-primary-sub {
+    font-size: 1.8rem;
   }
 }
 
@@ -604,12 +620,24 @@ a {
 
 @media screen and (max-width: 770px) and (orientation: portrait) {
 
+  .logo {
+    height: 75px;
+  }
+
   .header {
     height: 75vh;
   }
 
   .text-box {
     top: 15%;
+  }
+
+  .heading-primary-main {
+    font-size: 2rem;
+  }
+
+  .heading-primary-sub {
+    font-size: 1.5rem;
   }
 
   .icon {
@@ -626,6 +654,10 @@ a {
 }
 
 @media screen and (max-width: 500px) {
+
+  .logo {
+    height: 50px;
+  }
 
   .heading-primary-main {
     font-size: 1rem;
