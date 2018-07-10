@@ -376,21 +376,71 @@ hr {
   height: 30vh;
 }
 
-.card2 {
+.card {
   height: 30vh;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
   background-size: cover;
-  background-position: center 0;
+  background-position: center center;
   // border: solid 0.5px blue;
   background-blend-mode: screen;
+  background-repeat: no-repeat;
+}
+
+.card1 {
+  background-image: 
+    // linear-gradient(
+    //   to right bottom, 
+    //   rgba(40 , 180, 133, 0.3), 
+    //   rgba(126 , 213, 111, 0.3)),
+    url('../images/golf.jpg');
+  
+}
+
+.card2 {
   background-image: 
     // linear-gradient(
     //   to right bottom, 
     //   rgba(40 , 180, 133, 0.3), 
     //   rgba(126 , 213, 111, 0.3)),
     url('../images/myreads.jpg');
-    background-repeat: no-repeat;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+
+}
+
+.card3 {
+  background-image: 
+    // linear-gradient(
+    //   to right bottom, 
+    //   rgba(40 , 180, 133, 0.3), 
+    //   rgba(126 , 213, 111, 0.3)),
+    url('../images/asteroids.jpg');  
+}
+
+.card4 {
+  background-image: 
+    // linear-gradient(
+    //   to right bottom, 
+    //   rgba(40 , 180, 133, 0.3), 
+    //   rgba(126 , 213, 111, 0.3)),
+    url('../images/memorygame.jpg');  
+}
+
+.card5 {
+  background-image: 
+    // linear-gradient(
+    //   to right bottom, 
+    //   rgba(40 , 180, 133, 0.3), 
+    //   rgba(126 , 213, 111, 0.3)),
+    url('../images/ladybug.jpg');  
+}
+
+.card6 {
+  background-image: 
+    // linear-gradient(
+    //   to right bottom, 
+    //   rgba(40 , 180, 133, 0.3), 
+    //   rgba(126 , 213, 111, 0.3)),
+    url('../images/confusion.jpg');  
 }
 
 .project-name {

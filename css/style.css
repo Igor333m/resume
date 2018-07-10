@@ -340,15 +340,38 @@ hr {
   height: 30vh;
 }
 
-.card2 {
+.card {
   height: 30vh;
-  background-size: cover;
-  background-position: center 0;
-  background-blend-mode: screen;
-  background-image: url("../images/myreads.jpg");
-  background-repeat: no-repeat;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
   clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: screen;
+  background-repeat: no-repeat;
+}
+
+.card1 {
+  background-image: url("../images/golf.jpg");
+}
+
+.card2 {
+  background-image: url("../images/myreads.jpg");
+}
+
+.card3 {
+  background-image: url("../images/asteroids.jpg");
+}
+
+.card4 {
+  background-image: url("../images/memorygame.jpg");
+}
+
+.card5 {
+  background-image: url("../images/ladybug.jpg");
+}
+
+.card6 {
+  background-image: url("../images/confusion.jpg");
 }
 
 .project-name {
