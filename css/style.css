@@ -40,6 +40,11 @@ h2 {
   font-size: 2rem;
 }
 
+a {
+  text-decoration: none;
+  color: #444444;
+}
+
 .button {
   width: 250px;
   text-align: center;
@@ -158,6 +163,21 @@ h2 {
 .menu ul li {
   display: inline-block;
   padding: 10px 20px;
+  transition: all 3s ease-out;
+}
+
+.menu ul li a {
+  transition: all 0.5s ease-out;
+}
+
+.menu ul li:hover {
+  background-color: #6ecbd2;
+  border-radius: 10px;
+  transition: all 1s ease-out;
+}
+
+.menu ul li:hover a {
+  color: #fff;
 }
 
 .text-box {
@@ -515,11 +535,6 @@ button {
 
 .footer-text:last-child {
   text-align: right;
-}
-
-a {
-  text-decoration: none;
-  color: #444444;
 }
 
 /**** Media Queries  ****/
