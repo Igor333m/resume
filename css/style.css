@@ -45,6 +45,10 @@ a {
   color: #444444;
 }
 
+a[download] {
+  display: inline-block;
+}
+
 .button {
   width: 250px;
   text-align: center;
@@ -106,7 +110,7 @@ a {
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.2);
   -webkit-transform: scale(1.2, 1.2);
   transform: scale(1.2, 1.2);
 }
