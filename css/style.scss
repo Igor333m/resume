@@ -193,6 +193,14 @@ a {
   transition: all 1s ease-out;
 }
 
+// Javascript onload
+.hover {
+  background-color: #6ecbd2;
+  border-radius: 10px;
+  transition: background-color 0.5s ease-out,
+              border-radius 0.5s ease-out,
+}
+
 .menu ul li:hover a {
   color: #fff;
 }
