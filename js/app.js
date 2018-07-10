@@ -3,7 +3,7 @@ let what = document.getElementById('whatButton');
 let projects = document.getElementById('projectsButton');
 let contact = document.getElementById('contactButton');
 
-
+/**** Animate menu buttons on refresh ****/
 window.onload = function() {
     addHoverClass(home);
     setTimeout(() => home.className = '' , 800);
@@ -18,3 +18,8 @@ window.onload = function() {
 function addHoverClass(button) {
 	button.className = 'hover';
 }
+
+
+document.querySelector('.hello').scrollIntoView({ 
+  behavior: 'smooth' 
+});
