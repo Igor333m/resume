@@ -19,7 +19,26 @@ function addHoverClass(button) {
 	button.className = 'hover';
 }
 
+/**** smooth-scrolling ****/
+what.addEventListener('click', (e) => {
+	e.preventDefault();
+	document.querySelector('#what-am-i').scrollIntoView({ 
+	  behavior: 'smooth',
+		block: 'start'
+	});
+});
 
-document.querySelector('.hello').scrollIntoView({ 
-  behavior: 'smooth' 
+projects.addEventListener('click', (e) => {
+	e.preventDefault();
+	document.querySelector('#aaa').scrollIntoView({
+		behavior: 'smooth',
+		block: 'start'
+	});
+});
+
+contact.addEventListener('click', (e) => {
+	e.preventDefault();
+	document.querySelector('#contact').scrollIntoView({ 
+	  behavior: 'smooth'
+	});
 });
