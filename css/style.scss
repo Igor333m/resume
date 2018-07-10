@@ -157,12 +157,24 @@ h2 {
 
 .logo-box {
   position: absolute;
-  top: 40px;
+  top: 20px;
   left: 12.5%;
 }
 
 .logo {
-  height: 100px;
+  height: 50px;
+}
+
+.menu {
+  position: absolute;
+  right: 12.5%;
+  top: 20px;
+  display: inline-block;
+}
+
+.menu ul li{
+  display: inline-block;
+  padding: 10px 20px;
 }
 
 .text-box {
@@ -418,12 +430,12 @@ hr {
   margin: auto;
 }
 
-li {
+.technologies li {
   border-bottom: 1px grey solid;
   font-size: 1.1rem;
 }
 
-li:last-child {
+.technologies li:last-child {
   border-bottom: none;
 }
 
@@ -577,7 +589,7 @@ a {
 @media screen and (max-width: 1400px) {
 
   .logo {
-    height: 75px;
+    height: 50px;
   }
 
   .main-image {
@@ -706,7 +718,7 @@ a {
 @media screen and (max-width: 770px) and (orientation: portrait) {
 
   .logo {
-    height: 75px;
+    height: 50px;
   }
 
   .header {
@@ -741,7 +753,7 @@ a {
 @media screen and (max-width: 500px) {
 
   .logo {
-    height: 50px;
+    height: 40px;
   }
 
   .heading-primary-main {
