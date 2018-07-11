@@ -64,6 +64,10 @@ a[download] {
   position: relative;
 }
 
+button, .button {
+  border-radius: 5px;
+}
+
 .button span {
   display: inline-block;
   padding: 1rem;
@@ -84,6 +88,7 @@ a[download] {
   width: 100%;
   height: 100%;
   z-index: 1;
+  border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.1);
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -110,6 +115,7 @@ a[download] {
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+  border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   -webkit-transform: scale(1.2, 1.2);
   transform: scale(1.2, 1.2);
@@ -736,7 +742,7 @@ button {
   }
 
   button {
-    width: auto;
+    width: 75%;
     font-size: 0.8rem;
     height: 3rem;
     padding: 0 20px;
