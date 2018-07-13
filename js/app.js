@@ -56,6 +56,7 @@ function checkboxToglle() {
 
 // Hamburger navigation
 hamburgerHome.addEventListener('click', (e) => {
+		e.preventDefault();
 	checkboxToglle(checkbox);
 	document.querySelector('#header').scrollIntoView({ 
 	  behavior: 'smooth'
@@ -63,6 +64,7 @@ hamburgerHome.addEventListener('click', (e) => {
 });
 
 hamburgerAbout.addEventListener('click', (e) => {
+		e.preventDefault();
 	checkboxToglle(checkbox);
 	document.querySelector('#what-am-i').scrollIntoView({ 
 	  behavior: 'smooth',
@@ -71,6 +73,7 @@ hamburgerAbout.addEventListener('click', (e) => {
 });
 
 hamburgerProjects.addEventListener('click', (e) => {
+		e.preventDefault();
 	checkboxToglle(checkbox);
 	document.querySelector('#projects').scrollIntoView({ 
 	  behavior: 'smooth',
@@ -79,6 +82,7 @@ hamburgerProjects.addEventListener('click', (e) => {
 });
 
 hamburgerContact.addEventListener('click', (e) => {
+		e.preventDefault();
 	checkboxToglle(checkbox);
 	document.querySelector('#contacts').scrollIntoView({ 
 	  behavior: 'smooth',
