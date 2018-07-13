@@ -30,7 +30,7 @@ what.addEventListener('click', (e) => {
 
 projects.addEventListener('click', (e) => {
 	e.preventDefault();
-	document.querySelector('#aaa').scrollIntoView({
+	document.querySelector('#project-h2').scrollIntoView({
 		behavior: 'smooth',
 		block: 'start'
 	});
