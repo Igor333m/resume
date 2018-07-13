@@ -267,7 +267,7 @@ button, .button {
     &::after {
       width: 1.5rem;
       height: 2px;
-      background-color: red;
+      background-color: $color-blue;
       display: inline-block;
     }
 
@@ -284,15 +284,18 @@ button, .button {
   }
 
   &__checkbox:checked + &__button &__icon {
+    background-color: red;
     background-color: transparent;
   }
 
   &__checkbox:checked + &__button &__icon::before {
+    background-color: red;
     top: 0;
     transform: rotate(135deg);
   }
 
   &__checkbox:checked + &__button &__icon::after {
+    background-color: red;
     top: 0;
     transform: rotate(-135deg);
   }
