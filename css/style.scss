@@ -734,9 +734,10 @@ hr {
 
 input, textarea {
   width: 100%;
+  font-size: 1rem;
   color: white;
   background-color: #1a1a1a;
-  border: solid white 0.7px;
+  border: solid white 1px;
   padding-left: 10px;
 }
 
@@ -748,7 +749,7 @@ textarea[placeholder] {
   color: white;
   opacity: 1; /* Firefox */
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   font-family: $font-main;
 
 }
@@ -756,14 +757,14 @@ textarea[placeholder] {
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
   color: white;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   font-family: $font-main;
 }
 
 ::-ms-input-placeholder { /* Microsoft Edge */
   color: white;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   font-family: $font-main;
 }
 
