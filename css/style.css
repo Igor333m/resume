@@ -457,7 +457,7 @@ hr {
 }
 
 .card {
-  height: 30vh;
+  height: 15rem;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
   clip-path: polygon(0 0, 100% 0, 100% 93%, 0% 100%);
   background-size: cover;
