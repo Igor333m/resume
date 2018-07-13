@@ -163,6 +163,9 @@ button, .button {
 /**** Hamburger navigation for smaller screens ****/
 
 .navigation {
+  // for width higher than 770px
+  display: none;
+
   &__checkbox {
     display: none;
   }
@@ -948,6 +951,14 @@ button {
 
   .header {
     height: 75vh;
+  }
+
+  .navigation {
+    display: block;
+  }
+
+  .menu {
+    display: none;
   }
 
   .text-box {

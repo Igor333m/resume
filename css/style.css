@@ -145,6 +145,9 @@ button, .button {
 }
 
 /**** Hamburger navigation for smaller screens ****/
+.navigation {
+  display: none;
+}
 .navigation__checkbox {
   display: none;
 }
@@ -805,6 +808,14 @@ button {
 
   .header {
     height: 75vh;
+  }
+
+  .navigation {
+    display: block;
+  }
+
+  .menu {
+    display: none;
   }
 
   .text-box {
