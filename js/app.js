@@ -56,22 +56,14 @@ function checkboxToglle() {
 
 // Hamburger navigation
 hamburgerHome.addEventListener('click', (e) => {
-	e.preventDefault();
-	
 	checkboxToglle(checkbox);
-
-	console.log(checkbox);
 	document.querySelector('#header').scrollIntoView({ 
 	  behavior: 'smooth'
 	});
 });
 
 hamburgerAbout.addEventListener('click', (e) => {
-	e.preventDefault();
-	
 	checkboxToglle(checkbox);
-
-	console.log(checkbox);
 	document.querySelector('#what-am-i').scrollIntoView({ 
 	  behavior: 'smooth',
 	  block: 'start'
@@ -79,11 +71,7 @@ hamburgerAbout.addEventListener('click', (e) => {
 });
 
 hamburgerProjects.addEventListener('click', (e) => {
-	e.preventDefault();
-	
 	checkboxToglle(checkbox);
-
-	console.log(checkbox);
 	document.querySelector('#projects').scrollIntoView({ 
 	  behavior: 'smooth',
 	  block: 'start'
@@ -91,11 +79,7 @@ hamburgerProjects.addEventListener('click', (e) => {
 });
 
 hamburgerContact.addEventListener('click', (e) => {
-	e.preventDefault();
-	
 	checkboxToglle(checkbox);
-
-	console.log(checkbox);
 	document.querySelector('#contacts').scrollIntoView({ 
 	  behavior: 'smooth',
 	  block: 'start'
