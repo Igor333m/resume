@@ -50,7 +50,7 @@ body {
 }
 
 h1, h2 {
-   letter-spacing: 0.2rem;
+   letter-spacing: 0.1rem;
 }
 
 h2 {
@@ -508,7 +508,9 @@ hr {
 }
 
 .project {
+  position: relative;
   width: 21.64vw;
+  padding-bottom: 75px;
   margin-bottom: 5vh;
   background-color: $color-white;
   // border: solid 0.5px red;
@@ -544,8 +546,7 @@ hr {
     //   to right bottom, 
     //   rgba(40 , 180, 133, 0.3), 
     //   rgba(126 , 213, 111, 0.3)),
-    url('../images/golf.jpg');
-  
+    url('../images/golf.jpg'); 
 }
 
 .card2 {
@@ -555,7 +556,6 @@ hr {
     //   rgba(40 , 180, 133, 0.3), 
     //   rgba(126 , 213, 111, 0.3)),
     url('../images/myreads.jpg');
-
 }
 
 .card3 {
@@ -671,6 +671,23 @@ hr {
 
 .technologies li:last-child {
   border-bottom: none;
+}
+
+// Projects button links
+.center-buttons {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.button-projects {
+  display: inline-block;
+  padding: 1rem 2rem;
+  width: 75%;
+  font-weight: 300;
+  margin: 0;
 }
 
 /**** Contact ****/
