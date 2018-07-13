@@ -788,7 +788,7 @@ button {
 /**** Footer ****/
 
 .footer {
-  height: 6rem;
+  height: auto;
   grid-area: footer;
   display: flex;
   flex-direction: row;
@@ -799,7 +799,7 @@ button {
 
 .footer-text {
   width: 25vw;
-  padding-top: 2.2rem;
+  padding: 2.2rem 0;
 }
 
 .footer-text:nth-child(2) {
@@ -1021,7 +1021,11 @@ button {
 
   .all-projects {
     padding: 0;
-  } 
+  }
+
+  .footer-text {
+    padding: 1.1rem 0;
+  }
 }
 
 @media screen and (max-width: 500px) and (orientation: portrait) {
