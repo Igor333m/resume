@@ -24,6 +24,7 @@ $color-blue: rgb(102, 203, 255);
 $button-color-light: blue; 
 $background-color: #e9e9e9;
 $color-white: #fff;
+$contact-color: #1a1a1a;
 
 /* Reset css*/
 * {
@@ -135,7 +136,7 @@ button, .button {
   -o-transition: all 0.3s;
   transition: all 0.3s;
   border-radius: 6px;
-  border: 1px solid rgba(0,0,0,0.2);
+  border: 1px solid rgba(255,255,255,0.6);
   -webkit-transform: scale(1.2,1.2);
   transform: scale(1.2,1.2);
 }
@@ -194,8 +195,6 @@ button, .button {
     rgb(0 , 129, 193));
     z-index: 1000;
     transition: transform 0.8s cubic-bezier(.6,.01,.48,1);
-
-    // transform: scale(120);
   }
 
   &__nav {
@@ -509,16 +508,86 @@ hr {
 }
 
 .project {
-  position: relative;
   width: 21.64vw;
+  height: 52rem;
   padding-bottom: 75px;
-  margin-bottom: 5vh;
-  background-color: $color-white;
-  // border: solid 0.5px red;
+  margin-bottom: 3rem;;
 
+  // border: solid 0.5px red;
+  position: relative;
+  
+  perspective: 1000px;
+}
+
+.flip-container {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  height: 52rem;
+  position: relative;
+}
+
+.flip-container:hover {
+  transform: rotateY(180deg);
+}
+
+/* hide back of pane during swap */
+.front, .back {
+  backface-visibility: hidden;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+
+// Projects card front
+.front {
+  width: 100%;
+  height: 52rem;
+  background-color: $color-white;
   -webkit-box-shadow: -1px 4px 27px -2px rgba(163,157,163,1);
   -moz-box-shadow: -1px 4px 27px -2px rgba(163,157,163,1);
   box-shadow: -1px 4px 27px -2px rgba(163,157,163,1);
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+}
+
+
+// Projects card back
+.back {
+  transform: rotateY(180deg);
+  width: 100%;
+  height: 100%;
+  padding-bottom: 75px;
+  margin-bottom: 5vh;
+  color: $color-white;
+  text-align: justify;
+  font-weight: 300;
+  background-color: $contact-color;
+  -webkit-box-shadow: -1px 4px 27px -2px rgba(163,157,163,1);
+  -moz-box-shadow: -1px 4px 27px -2px rgba(163,157,163,1);
+  box-shadow: -1px 4px 27px -2px rgba(163,157,163,1);
+
+  &__title {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 3.5rem 0;
+  }
+
+  &__description {
+    width: 75%;
+    margin: 0 auto;
+    padding-bottom: 1.5rem;
+    border-bottom: $color-white 1px solid;
+  }
+
+  &__usage {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 1.5rem;
+  }
 }
 
 .project:nth-child(3) {
@@ -695,7 +764,7 @@ hr {
 
 .contact {
   grid-area: contact;
-  background-color: #1a1a1a;
+  background-color: $contact-color;
 }
 
 .contact-title {

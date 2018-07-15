@@ -115,21 +115,34 @@
 
     <div class="all-projects">
       <article class="project golf">
-        <div class="card card1"></div>
-        <!-- <img src="images/golf.jpg" alt="Golf Neighborhood Map App"> -->
-        <h3 class="project-name">
-          <span>Neighborhood</span><br>
-          <span>Golf Map</span>
-        </h3>
-        <ul class="technologies">
-          <li>React</li>
-          <li>Google Maps API</li>
-          <li>Foursquare API</li>
-          <li>Service Worker</li>
-          <li>Responsive Design</li>
-        </ul>
-        <div class="center-buttons">
-          <a href="https://golfneighborhoodmap.herokuapp.com" target="_blank" class="buttons button button-projects">Golf Map</a>
+        <div class="flip-container">
+
+          <div class="front">
+            <div class="card card1"></div>
+            <!-- <img src="images/golf.jpg" alt="Golf Neighborhood Map App"> -->
+            <h3 class="project-name">
+              <span>Neighborhood</span><br>
+              <span>Golf Map</span>
+            </h3>
+            <ul class="technologies">
+              <li>React</li>
+              <li>Google Maps API</li>
+              <li>Foursquare API</li>
+              <li>Service Worker</li>
+              <li>Responsive Design</li>
+            </ul>
+          </div>
+
+          <div class="back">
+            <h3 class="back__title">Neighborhood Golf Map</h3>
+            <p class="back__description">
+              A single-page application featuring a map of my neighborhood in Los Angeles. Map displays golf courses markers by default, and displays the filtered subset of location markers when user search filter is applied. Text input field should be used to filter the locations.
+            </p>
+            <p class="back__usage">Click the location markers on the map to see the golf course name, details and image retrieved from Foursquare API and its location. Or use the search box to type the golf course name and see location on the map</p>
+            <div class="center-buttons">
+              <a href="https://golfneighborhoodmap.herokuapp.com" target="_blank" class="buttons button button-projects">Golf Map</a>
+            </div>
+          </div>
         </div>
         
       </article>
