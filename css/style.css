@@ -177,12 +177,12 @@ button, .button {
 .navigation__nav {
   position: fixed;
   top: 0;
-  left: 0;
+  left: -50rem;
   height: 100vh;
   width: 0;
   z-index: 1500;
   opacity: 0;
-  transition: all 0.8s cubic-bezier(0.67, -0.57, 0.264, 1.54);
+  transition: all 1s cubic-bezier(0.7, -0.07, 0.7, 1.36);
 }
 .navigation__list {
   position: absolute;
@@ -218,6 +218,7 @@ button, .button {
 }
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
+  left: 0;
   width: 100%;
 }
 .navigation__icon {
