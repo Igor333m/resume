@@ -524,7 +524,6 @@ hr {
   transform-style: preserve-3d;
   height: 52rem;
   position: relative;
-  border: 1px red dotted;
 }
 
 .project:hover .flip-container{
@@ -534,13 +533,10 @@ hr {
 /* hide back of pane during swap */
 .front, .back {
   backface-visibility: hidden;
-
   position: absolute;
   top: 0;
   left: 0;
 }
-
-
 
 // Projects card front
 .front {
@@ -554,7 +550,6 @@ hr {
   /* for firefox 31 */
   transform: rotateY(0deg);
 }
-
 
 // Projects card back
 .back {

@@ -456,7 +456,6 @@ hr {
   transform-style: preserve-3d;
   height: 52rem;
   position: relative;
-  border: 1px red dotted;
 }
 
 .project:hover .flip-container {
