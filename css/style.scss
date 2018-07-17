@@ -48,6 +48,7 @@ body {
   font-size: 16px;
   line-height: 1.7;
   color: $text-color;
+  overflow-x: hidden;
 }
 
 h1, h2 {
@@ -98,7 +99,6 @@ button, .button {
   transition: all 0.5s;
 }
 
-
 .buttons::before{
   content: '';
   position: absolute;
@@ -113,7 +113,6 @@ button, .button {
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-
 }
 
 .buttons:hover::before{
@@ -220,7 +219,6 @@ button, .button {
 
   &__item {
     margin: 0.5rem;
-
   }
 
   &__link {

@@ -30,6 +30,7 @@ body {
   font-size: 16px;
   line-height: 1.7;
   color: #444444;
+  overflow-x: hidden;
 }
 
 h1, h2 {
