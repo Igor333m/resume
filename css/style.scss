@@ -507,7 +507,7 @@ hr {
 
 .project {
   width: 21.64vw;
-  height: 52rem;
+  height: 48rem;
   padding-bottom: 75px;
   margin-bottom: 3rem;;
 
@@ -520,7 +520,7 @@ hr {
 .flip-container {
   transition: 0.8s;
   transform-style: preserve-3d;
-  height: 52rem;
+  height: 48rem;
   position: relative;
 }
 
@@ -539,7 +539,7 @@ hr {
 // Projects card front
 .front {
   width: 100%;
-  height: 52rem;
+  height: 48rem;
   background-color: $color-white;
   -webkit-box-shadow: -1px 4px 27px -2px rgba(163,157,163,1);
   -moz-box-shadow: -1px 4px 27px -2px rgba(163,157,163,1);
