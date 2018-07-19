@@ -578,6 +578,20 @@ hr {
     border-bottom: $color-white 1px solid;
   }
 
+  &__description {
+    &::first-letter {
+      color: $color-blue;
+      float: left;
+      font-family: Georgia;
+      font-size: 5.5rem;
+      line-height: 4.8rem;
+      padding-top: 4px;
+      padding-right: 16px;
+      padding-left: 3px;
+    }
+    
+  }
+
   &__usage {
     width: 75%;
     margin: 0 auto;
