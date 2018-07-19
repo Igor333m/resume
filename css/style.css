@@ -793,7 +793,7 @@ button {
   border: none;
   outline: none;
   background-color: transparent;
-  color: #fff;
+  color: #66cbff;
   cursor: pointer;
   padding: 15px;
   border-radius: 4px;
@@ -804,7 +804,7 @@ button {
 
 .button-show {
   bottom: 1.3rem !important;
-  background-color: #cbcbcb !important;
+  background-color: #fff !important;
 }
 
 /**** Media Queries  ****/
