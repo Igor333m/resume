@@ -98,12 +98,8 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         goToTop.classList.add('button-show');
-        console.info("yes");
     } else {
-  
-        goToTop.classList.remove('button-show');
-        console.info("no");
-
+      goToTop.classList.remove('button-show');
     }
 }
 
