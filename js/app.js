@@ -7,6 +7,7 @@ let what = document.getElementById('whatButton');
 let projects = document.getElementById('projectsButton');
 let contact = document.getElementById('contactButton');
 let checkbox = document.getElementById('navi-toggle').checked;
+let goToTop = document.getElementById("go-to-top-button");
 
 
 /**** Animate menu buttons on refresh ****/
@@ -51,12 +52,12 @@ contact.addEventListener('click', (e) => {
 
 // Set navigaton checkbox to false
 function checkboxToglle() {
-		document.getElementById('navi-toggle').checked = false;
+	document.getElementById('navi-toggle').checked = false;
 }
 
 // Hamburger navigation
 hamburgerHome.addEventListener('click', (e) => {
-		e.preventDefault();
+	e.preventDefault();
 	checkboxToglle(checkbox);
 	document.querySelector('#header').scrollIntoView({ 
 	  behavior: 'smooth'
@@ -64,7 +65,7 @@ hamburgerHome.addEventListener('click', (e) => {
 });
 
 hamburgerAbout.addEventListener('click', (e) => {
-		e.preventDefault();
+	e.preventDefault();
 	checkboxToglle(checkbox);
 	document.querySelector('#what-am-i').scrollIntoView({ 
 	  behavior: 'smooth',
@@ -73,7 +74,7 @@ hamburgerAbout.addEventListener('click', (e) => {
 });
 
 hamburgerProjects.addEventListener('click', (e) => {
-		e.preventDefault();
+	e.preventDefault();
 	checkboxToglle(checkbox);
 	document.querySelector('#projects').scrollIntoView({ 
 	  behavior: 'smooth',
@@ -82,10 +83,37 @@ hamburgerProjects.addEventListener('click', (e) => {
 });
 
 hamburgerContact.addEventListener('click', (e) => {
-		e.preventDefault();
+	e.preventDefault();
 	checkboxToglle(checkbox);
 	document.querySelector('#contacts').scrollIntoView({ 
 	  behavior: 'smooth',
 	  block: 'start'
 	});
+});
+
+// Scroll to top button
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        goToTop.classList.add('button-show');
+        console.info("yes");
+    } else {
+  
+        goToTop.classList.remove('button-show');
+        console.info("no");
+
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+goToTop.addEventListener('click', (e) => {
+	e.preventDefault();
+	topFunction();
 });

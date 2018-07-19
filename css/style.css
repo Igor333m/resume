@@ -346,7 +346,6 @@ button, .button {
   right: 0;
   bottom: 0;
   line-height: 0;
-  max-width: 40%;
 }
 
 .main-image img {
@@ -492,6 +491,7 @@ hr {
   color: #fff;
   text-align: justify;
   font-weight: 300;
+  line-height: 1.5;
   background-color: #1a1a1a;
   -webkit-box-shadow: -1px 4px 27px -2px #a39da3;
   -moz-box-shadow: -1px 4px 27px -2px #a39da3;
@@ -501,7 +501,7 @@ hr {
 .back__title {
   text-align: center;
   font-size: 1.5rem;
-  padding: 3.5rem 0;
+  padding: 3rem 0;
 }
 .back__description {
   width: 75%;
