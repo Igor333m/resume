@@ -989,6 +989,10 @@ button {
     font-size: 0.8rem;
   }
 
+  .back__title {
+    padding: 2.5rem 0;
+  }
+
   .footer {
     height: auto;
     display: block;
@@ -1002,6 +1006,15 @@ button {
   .footer-text:last-child {
     text-align: center;
     padding-bottom: 25px;
+  }
+}
+@media screen and (max-width: 400px) and (orientation: portrait) {
+  .back__title {
+    padding: 2rem 0;
+  }
+
+  .center-buttons {
+    padding-bottom: 2rem;
   }
 }
 
