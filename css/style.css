@@ -579,6 +579,9 @@ hr {
 .card6 {
   background-image: url("../images/confusion.jpg");
 }
+.card7 {
+  background-image: url('../images/book-finder.jpg');
+}
 
 .project-name {
   position: relative;
@@ -618,7 +621,13 @@ hr {
 .confusion span {
   background-image: linear-gradient(to right bottom, rgba(102, 203, 255, 0.8), rgba(0, 129, 193, 0.8));
 }
-
+.book-finder span {
+  background: rgb(2,0,36);
+  background: linear-gradient(
+    to right bottom,
+    rgba(58,39,18,1),
+    rgba(180,142,101,1));
+}
 .technologies {
   list-style-type: none;
   text-align: center;

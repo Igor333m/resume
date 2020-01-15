@@ -97,53 +97,53 @@ button, .button {
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
-}
 
-.buttons::before{
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  border-radius: 5px;
-  background-color: rgba(255,255,255,0.10);
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
+  &::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.10);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
 
-.buttons:hover::before{
-  opacity: 0 ;
-  -webkit-transform: scale(0.5,0.5);
-  transform: scale(0.5,0.5);
-}
+  &:hover::before{
+    opacity: 0 ;
+    -webkit-transform: scale(0.5,0.5);
+    transform: scale(0.5,0.5);
+  }
 
-.buttons::after{
-  content: '';
-  position: absolute;
-  top: -1px;
-  left: -1px;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  opacity: 0;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-  border-radius: 6px;
-  border: 1px solid rgba(255,255,255,0.6);
-  -webkit-transform: scale(1.2,1.2);
-  transform: scale(1.2,1.2);
-}
+  &::after{
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    border-radius: 6px;
+    border: 1px solid rgba(255,255,255,0.6);
+    -webkit-transform: scale(1.2,1.2);
+    transform: scale(1.2,1.2);
+  }
 
-.buttons:hover::after{
-  opacity: 1;
-  -webkit-transform: scale(1,1);
-  transform: scale(1,1);
+  &:hover::after{
+    opacity: 1;
+    -webkit-transform: scale(1,1);
+    transform: scale(1,1);
+  }
 }
 
 ::-webkit-scrollbar {
@@ -328,24 +328,27 @@ button, .button {
   right: 12.5%;
   top: 20px;
   display: inline-block;
-}
 
-.menu ul li{
-  display: inline-block;
-  padding: 10px 20px;
-  transition: all 3s ease-out;
-}
+  &ul li{
+    display: inline-block;
+    padding: 10px 20px;
+    transition: all 3s ease-out;
 
-.menu ul li a {
-  transition: all 0.5s ease-out;
-}
+    &a {
+      transition: all 0.5s ease-out;
+    }
 
-.menu ul li:hover {
-  background-color: $color-blue;
-  border-radius: 10px;
-  transition: all 1s ease-out;
-}
+    &:hover {
+      background-color: $color-blue;
+      border-radius: 10px;
+      transition: all 1s ease-out;
 
+      &a {
+        color: $color-white;
+      }
+    }
+  }
+}
 // Javascript onload
 .hover {
   background-color: $color-blue;
@@ -353,11 +356,6 @@ button, .button {
   transition: background-color 0.5s ease-out,
               border-radius 0.5s ease-out,
 }
-
-.menu ul li:hover a {
-  color: $color-white;
-}
-
 
 .text-box {
   position: absolute;
@@ -394,13 +392,12 @@ button, .button {
   right: 0;
   bottom: 0;
   line-height: 0;
-}
 
-.main-image img {
-  max-width: 100%;
-  height: auto;
+  &img {
+    max-width: 100%;
+    height: auto;
+  }
 }
-
 // Header animation
 @keyframes moveInLeft {
   0% {
@@ -447,13 +444,20 @@ button, .button {
   padding: 0 12.5%;
   overflow: auto;
 }
+
 .what {
   width: 21.65vw;
   margin-right: 5%;
-}
 
-.what:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &p {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    text-align:justify;
+  }
 }
 
 .icon {
@@ -469,14 +473,6 @@ hr {
   border-width: 1.5px;
 } 
 
-.what p {
-  padding-top: 20px;
-  padding-bottom: 50px;
-  text-align:justify;
-}
-
-
-
 /**** Projects ****/
 
 .projects {
@@ -489,10 +485,10 @@ hr {
   width: 100%;
   text-align: center;
   padding: 50px 0;
-}
 
-.projects-title hr {
-  margin: auto;
+  &hr {
+    margin: auto;
+  }
 }
 
 .all-projects {
@@ -686,19 +682,28 @@ hr {
     url('../images/confusion.jpg');  
 }
 
+.card7 {
+  background-image: 
+    // linear-gradient(
+    //   to right bottom, 
+    //   rgba(40 , 180, 133, 0.3), 
+    //   rgba(126 , 213, 111, 0.3)),
+    url('../images/book-finder.jpg');  
+}
+
 .project-name {
   position: relative;
   text-align: right;
-}
 
-.project-name span {
-  display: inline-block;
-  padding: 1rem 2rem;
-  font-weight: 300;
-  font-size: 2rem;
-  color: $color-white;
-  margin-top: -20px;
-  border-radius: 5px 0 0 5px;
+  &span {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-weight: 300;
+    font-size: 2rem;
+    color: $color-white;
+    margin-top: -20px;
+    border-radius: 5px 0 0 5px;
+  }
 }
 
 .golf span {
@@ -743,6 +748,14 @@ hr {
     rgba(0 , 129, 193, 0.8));
 }
 
+.book-finder span {
+  background: rgb(2,0,36);
+  background: linear-gradient(
+    to right bottom, rgba(2,0,36,1) 0%,
+    rgba(58,39,18,1) 35%,
+    rgba(180,142,101,1) 100%);
+}
+
 .project-name span:first-child {
   
 }
@@ -754,15 +767,15 @@ hr {
   line-height: 3rem;
   width: 75%;
   margin: auto;
-}
 
-.technologies li {
-  border-bottom: 1px grey solid;
-  font-size: 1.1rem;
-}
+  &li {
+    border-bottom: 1px grey solid;
+    font-size: 1.1rem;
+  }
 
-.technologies li:last-child {
-  border-bottom: none;
+  &li:last-child {
+    border-bottom: none;
+  }
 }
 
 // Projects button links
@@ -794,12 +807,13 @@ hr {
   text-align: center;
   padding: 50px 0;
   color: $color-white;
+
+  &hr {
+    margin: auto;
+    color: $color-white;
+  }
 }
 
-.contact-title hr {
-  margin: auto;
-  color: $color-white;
-}
 .contact-form {
   display: flex;
   flex-flow: row wrap;
@@ -814,10 +828,10 @@ hr {
   width: 48.75%;
   padding-bottom: 2.5%;
   // border: solid green 1px;
-}
 
-.form-group:last-child {
-  margin-left: 2.5%;
+  &:last-child {
+    margin-left: 2.5%;
+  }
 }
 
 #contact {
