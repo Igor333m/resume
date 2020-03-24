@@ -579,8 +579,12 @@ hr {
 .card6 {
   background-image: url("../images/confusion.jpg");
 }
+
 .card7 {
   background-image: url('../images/book-finder.jpg');
+}
+.card8 {
+  background-image: url('../images/slack.jpg');
 }
 
 .project-name {
@@ -596,6 +600,10 @@ hr {
   color: #fff;
   margin-top: -20px;
   border-radius: 5px 0 0 5px;
+}
+
+.slack span {
+  background-image: linear-gradient(to right bottom, rgba(91, 9, 121, 0.8), rgba(255, 0, 99, 0.8));
 }
 
 .golf span {
