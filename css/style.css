@@ -583,8 +583,13 @@ hr {
 .card7 {
   background-image: url('../images/book-finder.jpg');
 }
+
 .card8 {
   background-image: url('../images/slack.jpg');
+}
+
+.card9 {
+  background-image: url('../images/marko-portfolio.jpg');
 }
 
 .project-name {
@@ -629,6 +634,11 @@ hr {
 .confusion span {
   background-image: linear-gradient(to right bottom, rgba(102, 203, 255, 0.8), rgba(0, 129, 193, 0.8));
 }
+
+.marko-portfolio span {
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(87, 87, 87, 0.8));
+}
+
 .book-finder span {
   background: rgb(2,0,36);
   background: linear-gradient(
