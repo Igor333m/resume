@@ -592,6 +592,10 @@ hr {
   background-image: url('../images/marko-portfolio.jpg');
 }
 
+.card10 {
+  background-image: url('../images/gamersmusic.jpg');
+}
+
 .project-name {
   position: relative;
   text-align: right;
@@ -605,6 +609,10 @@ hr {
   color: #fff;
   margin-top: -20px;
   border-radius: 5px 0 0 5px;
+}
+
+.gamersmusic span {
+  background-image: linear-gradient(to right bottom, rgba(252, 205, 77, 0.8), rgba(252, 164, 0, 0.8));
 }
 
 .slack span {
